@@ -1293,9 +1293,8 @@ body {
   margin-bottom: 2rem;
   display: inline-block;
   font-size: 3rem;
-  font-family: arial;
+  font-family: "Playfair Display";
   color: #fff;
-  font-style: italic;
 }
 
 #p_prldr .svg_anm {
@@ -1327,7 +1326,6 @@ body {
   font-size: 2.5rem;
   line-height: 3.5rem;
   font-weight: 700;
-  font-style: italic;
   color: #fff;
   background-image: url("../img/logo-bg.png");
   background-repeat: no-repeat;
@@ -1345,46 +1343,41 @@ body {
 }
 
 .header .cont-abs .header-row_menu .col-menu ul li:last-child,
-.header-row_menu_fix .col-menu_fix ul li:last-child {
+.header-row_menu_fix .col-menu_fix ul li:last-child,
+.top-menu .top-menu_link ul li:last-child {
   margin: 0!important;
 }
 
-.header-row_menu_fix .col-menu_fix ul li {
-  display: inline-block;
-  margin-right: 3rem;
-  position: relative;
-  line-height: 3.5rem;
+.header-row_menu_fix .col-menu_fix ul {
+  height: 10rem;
 }
 
-.header .cont-abs .header-row_menu .col-menu ul li a,
-.header-row_menu_fix .col-menu_fix ul li a {
+.header-row_menu_fix .col-menu_fix ul li,
+.top-menu .top-menu_link ul li {
+  display: inline-block;
+  margin-right: 20%;
+}
+
+.header-row_menu_fix .col-menu_fix ul li y a,
+.top-menu .top-menu_link ul li a {
   height: 3.5rem;
   line-height: 3.5rem;
-  font-size: 1.4rem;
-  font-family: "Montserrat";
-  color: #ffa800;
+  font-size: 1.2rem;
+  font-family: "Montserrat",sans-serif;
+  color: #eee;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.header .cont-abs .header-row_menu .col-menu ul li a .fa-search,
-.header-row_menu_fix .col-menu_fix ul li a .fa-search {
-  font-size: 1.4rem;
-  color: #ffa800;
-}
-
-.header .cont-abs .header-row_menu .col-menu ul li a .fa-search:hover,
-.header .cont-abs .header-row_menu .col-menu ul li:hover a,
-.header-row_menu_fix .col-menu_fix ul li a .fa-search:hover,
 .header-row_menu_fix .col-menu_fix ul li:hover a,
-.projects-row_slider .arrow-left:hover i,
-.projects-row_slider .arrow-right:hover i {
-  color: #fff;
+.header-top .tel a:hover,
+.top-menu .top-menu_link ul li:hover a {
+  color: #f28942;
 }
 
-.header .cont-abs .header-row_menu .col-menu ul li:hover .brd-btm,
-.header-row_menu_fix .col-menu_fix ul li:hover .brd-btm_fix {
+.header-row_menu_fix .col-menu_fix ul li:hover .brd-btm_fix,
+.top-menu .top-menu_link ul li:hover .brd-btm_fix {
   position: absolute;
   left: 50%;
   transition: all 300ms ease;
@@ -1394,20 +1387,111 @@ body {
   -o-transform: translateX(-1.5rem);
   transform: translateX(-1.5rem);
   width: 3rem;
-  border: 1px solid #fff;
+  border: 1px solid #f28942;
 }
 
 .header-top {
   height: 6rem;
-  background-color: #000;
+  background-color: #151512;
+  font-family: 'Arial',sans-serif;
+  color: #cfccca;
+  letter-spacing: 1px;
+}
+
+.header-top .out-col_start {
+  padding-left: 5rem;
 }
 
 .header-top .out-col_start span {
   line-height: 6rem;
-  font-size: 16px;
-  font-family: 'Montserrat';
+  font-size: 12px;
+}
+
+.header-top .tel a {
+  display: inline-block;
+  line-height: 6rem;
+  font-size: 14px;
+  text-decoration: none;
   color: #cfccca;
-  font-weight: 300;
+}
+
+.header-top .tel img {
+  line-height: 6rem;
+  width: 30px;
+  position: relative;
+  left: 15px;
+  top: -2px;
+}
+
+.header-top .adr {
+  font-size: 12px;
+}
+
+.header-top .adr #adr-bottom,
+.header-top .adr #adr-top {
+  position: relative;
+  top: 10px;
+}
+
+.header-top .adr img {
+  width: 30px;
+  position: relative;
+  left: 110px;
+  top: -5px;
+}
+
+.header-top .vk {
+  height: 6rem;
+}
+
+.header-top .vk a {
+  display: block;
+  height: 6rem;
+  background: url("../img/vk.png") no-repeat center center;
+}
+
+.header-top .vk a:hover {
+  background: url("../img/vk_hover.png") no-repeat center center;
+}
+
+.top-menu,
+.top-menu .mi-logo,
+.top-menu .top-menu_link,
+.top-menu .top-menu_link ul {
+  height: 10rem;
+}
+
+.top-menu .mi-logo img {
+  position: relative;
+  top: 13px;
+  left: 35px;
+}
+
+.top-menu .mi-logo .logo-text1 {
+  position: relative;
+  left: 5rem;
+  top: 10px;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.top-menu .mi-logo .logo-text2 {
+  position: relative;
+  left: 12rem;
+  top: -15px;
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #f28942;
+}
+
+.top-menu .top-menu_link ul li {
+  position: relative;
+  top: 3.1rem;
+  line-height: 3.5rem;
+}
+
+.top-menu .top-menu_link ul li a {
+  color: #000;
 }
 
 .header {
@@ -1416,7 +1500,7 @@ body {
 }
 
 .header .carousel {
-  padding-top: 10rem;
+  margin: 0;
 }
 
 .header .carousel button {
@@ -1424,7 +1508,7 @@ body {
 }
 
 .header .carousel .slide1 {
-  height: 50rem;
+  height: 60rem;
   width: 100%;
   background: url("../img/header-first.jpg") no-repeat center center;
   -webkit-background-size: cover!important;
@@ -1440,14 +1524,14 @@ body {
 
 .header .carousel .slide1-img {
   position: absolute;
-  width: 300px;
+  width: 500px;
   top: 1rem;
   left: 20rem;
   z-index: 100;
 }
 
 .header .carousel .slide2 {
-  height: 50rem;
+  height: 60rem;
   width: 100%;
   background: url("../img/header-first.jpg") no-repeat center center;
   -webkit-background-size: cover!important;
@@ -1457,14 +1541,14 @@ body {
 
 .header .carousel .slide2-img {
   position: absolute;
-  width: 350px;
+  width: 450px;
   top: 3rem;
   left: 20rem;
   z-index: 100;
 }
 
 .header .carousel .slide3 {
-  height: 50rem!important;
+  height: 60rem!important;
   width: 100%;
   background: url("../img/index-sound-bg.jpg") no-repeat center center;
   -webkit-background-size: cover!important;
@@ -1558,29 +1642,79 @@ body {
   position: relative;
 }
 
+.header .cont-abs .header-row_menu .col-menu ul li a {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  color: #ffa800;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header .cont-abs .header-row_menu .col-menu ul li a .fa-search {
+  font-size: 1.4rem;
+  color: #ffa800;
+}
+
+.authors-row_sld .auth-name span,
+.header .cont-abs .header-row_menu .col-menu ul li a .fa-search:hover,
+.header .cont-abs .header-row_menu .col-menu ul li:hover a,
+.projects-row_slider .arrow-left:hover i,
+.projects-row_slider .arrow-right:hover i {
+  color: #fff;
+}
+
+.header .cont-abs .header-row_menu .col-menu ul li:hover .brd-btm {
+  position: absolute;
+  left: 50%;
+  transition: all 300ms ease;
+  -webkit-transform: translateX(-1.5rem);
+  -moz-transform: translateX(-1.5rem);
+  -ms-transform: translateX(-1.5rem);
+  -o-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+  width: 3rem;
+  border: 1px solid #fff;
+}
+
 .header .header-sld {
-  margin-top: 17rem;
+  margin-top: 15rem;
   margin-left: 40rem;
   text-align: center;
 }
 
+.header .header-sld .col-sld h3 {
+  position: relative;
+  left: -25rem;
+  top: -2rem;
+  font-size: 1.5rem;
+  font-family: "Raleway";
+  letter-spacing: 3px;
+  color: #f28942;
+}
+
 .header .header-sld .col-sld h1 {
-  font-size: 4.5rem;
-  font-family: "Playfair Display";
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-family: "Raleway";
   color: #fff;
-  font-style: italic;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .header .header-sld .col-sld h2 {
-  font-size: 24px;
+  margin-top: 6rem;
+  font-size: 18px;
   font-family: "Raleway";
-  color: #fff;
+  color: #9d9d9d;
 }
 
 .header .header-sld .col-sld .sld-btn {
   display: inline-block;
   transition: all 500ms ease;
-  margin-top: 2.5rem;
+  margin-top: 5.5rem;
   border-width: 2px;
   border-color: #fff;
   border-style: solid;
@@ -1589,9 +1723,9 @@ body {
   height: 4.5rem;
   line-height: 4.5rem;
   font-size: 1.4rem;
-  font-family: "Montserrat";
+  font-family: "Raleway";
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -1634,10 +1768,14 @@ body {
 
 .projects-row_slider .col-content h1,
 .service-row_cap .col-serv_cap h1,
-.service-row_cap .col-serv_cap h2 {
+.service-row_cap .col-serv_cap h2,
+.top-parralax_content p {
   font-size: 3.2rem;
   font-family: "Playfair Display";
   color: #000;
+}
+
+.service-row_cap .col-serv_cap h2 {
   font-style: italic;
 }
 
@@ -1718,15 +1856,15 @@ body {
 }
 
 .top-parralax {
-  margin-top: 8rem;
+  margin-top: 0;
   text-align: center;
   width: 100%;
   background-color: #161616;
 }
 
 .top-parralax_content {
-  height: 26rem;
-  background-image: url("../img/urban-header1.jpg");
+  height: 30rem;
+  background-image: url("../img/parallax-mi.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: fill;
@@ -1738,8 +1876,6 @@ body {
 .top-parralax_content p {
   padding-top: 11rem;
   font-size: 2.3rem;
-  font-family: "Playfair Display";
-  color: #e9e9e9;
 }
 
 .projects {
@@ -1999,7 +2135,6 @@ body {
   font-size: 3.2rem;
   font-family: "Playfair Display";
   color: #fff;
-  font-style: italic;
   line-height: 1.1;
 }
 
@@ -2127,10 +2262,6 @@ body {
   line-height: 1.4;
 }
 
-.authors-row_sld .auth-name span {
-  color: #fff;
-}
-
 .blog {
   background-color: #ebebeb;
   padding-top: 4.5rem;
@@ -2143,11 +2274,13 @@ body {
 }
 
 .blog-row_cap .col-blog_cap h1,
-.blog-row_cap .col-blog_cap h2,
-.footer .row-footer .col-footer h1 {
+.blog-row_cap .col-blog_cap h2 {
   font-size: 3.2rem;
   font-family: "Playfair Display";
   color: #000;
+}
+
+.blog-row_cap .col-blog_cap h2 {
   font-style: italic;
 }
 
@@ -2332,10 +2465,11 @@ body {
 .footer .row-footer .col-footer h1 {
   margin: 0;
   display: inline-block;
+  font-family: "Playfair Display";
   font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
-  ackground-image: url("../img/logo-bg.png");
+  background-image: url("../img/logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
 }
