@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Light.eot');
+  src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Light.woff2') format('woff2'), url('../fonts/Raleway-Light.woff') format('woff'), url('../fonts/Raleway-Light.ttf') format('truetype'), url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Medium.eot');
+  src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Medium.woff2') format('woff2'), url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.ttf') format('truetype'), url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.eot');
+  src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Bold.woff2') format('woff2'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.eot');
+  src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'), url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Italic.eot');
+  src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'), url('../fonts/PlayfairDisplay-Italic.woff') format('woff'), url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-BlackItalic.eot');
+  src: url('../fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'), url('../fonts/PlayfairDisplay-BlackItalic.woff') format('woff'), url('../fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype'), url('../fonts/PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('../fonts/NotoSerif.eot');
+  src: url('../fonts/NotoSerif.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoSerif.woff2') format('woff2'), url('../fonts/NotoSerif.woff') format('woff'), url('../fonts/NotoSerif.ttf') format('truetype'), url('../fonts/NotoSerif.svg#NotoSerif') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('../fonts/NotoSerif-Italic.eot');
+  src: url('../fonts/NotoSerif-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoSerif-Italic.woff2') format('woff2'), url('../fonts/NotoSerif-Italic.woff') format('woff'), url('../fonts/NotoSerif-Italic.ttf') format('truetype'), url('../fonts/NotoSerif-Italic.svg#NotoSerif-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+html {
+  font-size: 10px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 3000rem;
+}
+/* Header block */
+.header {
+  position: relative;
+  height: 60rem
+  /* background: url(../img/header-slider-1.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover; */
+  /* Active search block */
+  /* Main Header */
+}
+.header .carousel {
+  position: absolute;
+}
+.header .carousel .slide1 {
+  height: 60rem;
+  background: url(../img/header-slider-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.header a .icon {
+  position: absolute;
+  font-size: 5rem;
+  color: #FFF;
+}
+.header a .icon:hover {
+  color: #FFA800;
+}
+.header a .fa-angle-left {
+  left: 3rem;
+  top: 50%;
+}
+.header a .fa-angle-right {
+  right: 3rem;
+  top: 50%;
+}
+.header-search_active {
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+  background-color: #0C0C0C;
+  z-index: 10;
+  display: none;
+}
+.header-search_active label {
+  font-size: 2.5rem;
+  font-family: "Playfair Display";
+  color: #838383;
+}
+.header-search_active .inp-search {
+  width: 50%;
+  height: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 2rem;
+  font-family: "Playfair Display";
+  color: #838383;
+  background-color: #0C0C0C;
+  border: none;
+  outline-style: none;
+}
+.header-search_active .fa-close {
+  position: relative;
+  top: -0.4rem;
+  font-size: 1.4rem;
+  color: #ffa800;
+}
+.header-row_menu {
+  margin-top: 3.5rem;
+}
+.header-row_menu .col-logo {
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+.header-row_menu .col-logo h1 {
+  margin: 0;
+  display: inline-block;
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #FFF;
+}
+.header-row_menu .col-logo span {
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #FFA800;
+}
+.header-row_menu .col-menu {
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+.header-row_menu .col-menu ul li {
+  display: inline-block;
+  margin-right: 3rem;
+  position: relative;
+}
+.header-row_menu .col-menu ul li a {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  color: #FFA800;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-row_menu .col-menu ul li a .fa-search {
+  font-size: 1.4rem;
+  color: #FFA800;
+}
+.header-row_menu .col-menu ul li a .fa-search:hover {
+  color: #FFF;
+}
+.header-row_menu .col-menu ul li:hover a {
+  color: #FFF;
+}
+.header-row_menu .col-menu ul li:hover .brd-btm {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-1.5rem);
+  -ms-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+  width: 3rem;
+  border: 1px solid #fff;
+}
+.header-sld {
+  margin-top: 17rem;
+  text-align: center;
+}
+.header-sld .col-sld h1 {
+  font-size: 4.5rem;
+  font-family: "Playfair Display";
+  color: #FFF;
+  font-style: italic;
+}
+.header-sld .col-sld h2 {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: #FFF;
+}
+.header-sld .col-sld .sld-btn {
+  display: inline-block;
+  margin-top: 2.5rem;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.102);
+  width: 145px;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-sld .col-sld .sld-btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
