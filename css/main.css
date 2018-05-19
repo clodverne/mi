@@ -564,7 +564,7 @@ body {
   display: inline-block;
   transition: all 500ms ease;
   margin-top: 5.5rem;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #fff;
   border-style: solid;
   background-color: rgba(0,0,0,.102);
@@ -1024,16 +1024,14 @@ body {
   .header .carousel .slide2 {
     height: 50rem;
     width: 100%;
-    background: url("../img/header-first.jpg") no-repeat center center;
+    background: url("../img/index-suit-bg.jpg-V3.jpg") no-repeat center center;
     -webkit-background-size: cover!important;
     -o-background-size: cover!important;
     background-size: cover!important;
   }
 
   .header .carousel .slide2-img {
-    width: 300px;
-    top: 3rem;
-    left: 10rem;
+    display: none;
   }
 
   .header .carousel .slide3 {
