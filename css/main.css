@@ -147,6 +147,7 @@ body {
   text-decoration: none;
 }
 
+.contact .contact-li span a:hover,
 .header-row_menu_fix .col-menu_fix ul li:hover a,
 .header-top .tel a:hover,
 .top-menu .top-menu_link ul li:hover a {
@@ -710,19 +711,24 @@ body {
 .bottom-parralax {
   text-align: center;
   width: 100%;
+  height: 25rem;
   background-color: #161616;
 }
 
-.bottom-parralax_content {
-  height: 25rem;
-  vertical-align: middle;
-  background-image: url("../img/parallax-bot.jpg");
+.bottom-parralax_content,
+.contact-fon {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: fill;
   -o-background-size: fill;
   background-size: fill;
   background-attachment: fixed;
+}
+
+.bottom-parralax_content {
+  height: 25rem;
+  vertical-align: middle;
+  background-image: url("../img/parallax-bot.jpg");
 }
 
 .bottom-parralax_content .new-goods {
@@ -748,4 +754,66 @@ body {
   color: #fff;
   font-weight: 400;
   text-decoration: none;
+}
+
+.contact-fon {
+  background-image: url("../img/parallax-mi.jpg");
+}
+
+.contact {
+  padding-bottom: 3rem;
+}
+
+.contact .contact-logo {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #222;
+}
+
+.contact .contact-text {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.contact .contact-map {
+  padding: 0;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.contact .contact-li {
+  height: 3rem;
+}
+
+.contact .contact-li span,
+.footer {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact .contact-li span {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: #474747;
+}
+
+.contact .contact-li span a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #474747;
+}
+
+.footer {
+  background-color: #0c0b0b;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.footer p {
+  margin: 1rem;
 }
