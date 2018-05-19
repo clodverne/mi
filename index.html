@@ -44,44 +44,51 @@
             </div>
         </div>
   <!-- Main content -->
-        <div class="header-row_menu_fix">
-               
-                <div class="col-md-12 col-sm-9 col-menu_fix">
-                    <ul class="ull_fix">
-                        <li>
-                            <a href="#home">ГЛАВНАЯ</a>
-                            <div class="brd-btm_fix"></div>
-                        </li>
-                        <li>
-                            <a href="#aboutus">О НАС</a>
-                            <div class="brd-btm_fix"></div>
-                        </li>
-                        <li>
-                            <a href="#goods">ПРОДУКЦИЯ</a>
-                            <div class="brd-btm_fix"></div>
-                        </li>
-                        <li>
-                            <a href="#place">КАК НАС НАЙТИ</a>
-                            <div class="brd-btm_fix"></div>
-                        </li>
-                     </ul>
-                </div>
-            </div>
+
+    <div class="header-row_menu_fix">
+       
+        <div class="col-md-12 col-sm-12 col-xs-12 col-menu_fix">
+            <ul class="ull_fix">
+                <li>
+                    <a href="#home">ГЛАВНАЯ</a>
+                    <div class="brd-btm_fix"></div>
+                </li>
+                <li>
+                    <a href="#aboutus">О НАС</a>
+                    <div class="brd-btm_fix"></div>
+                </li>
+                <li>
+                    <a href="#goods">ПРОДУКЦИЯ</a>
+                    <div class="brd-btm_fix"></div>
+                </li>
+                <li>
+                    <a href="#place">КАК НАС НАЙТИ</a>
+                    <div class="brd-btm_fix"></div>
+                </li>
+             </ul>
+        </div>
+    </div>
+
+ 
+       
   <!--Header-top -->
-  <div class="ht">
+  <div class="ht desktop">
       <div class="container">
           <div class="row">
               <div id="home" class="header-top">
                     <div class="col-md-4 col-sm-6 col-xs-12 out-col_start"><span>Смартфоны, гаджеты и аксессуары</span></div>
                     <div class="col-md-3 col-sm-6 col-xs-12 tel">
-                        <a href="tel:+79166995560">8 (916) 699-55-60</a>
-                        <img src="img/smartphone.png" alt="">    
+                        <a href="tel:+79166995560">8 (916) 699-55-60
+                        <div class="phone-ico"> </div>
+                          
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 adr">
-                        <span id=adr-top>Балашиха, ш. Энтузиастов, 1Б</span>
-                        <br>
-                        <span id=adr-bottom>ТЦ «Светофор»</span>
-                        <img src="img/place-localizer.png" alt="">
+                        <a href="#place">
+                            <span id=adr-top>Балашиха, ш. Энтузиастов, 1Б</span>
+                            <br>
+                            <span id=adr-bottom>ТЦ «Светофор»</span>
+                            <div class="place-ico"> </div>
+                        </a>
                     </div>
                     <div class="col-md-1 col-sm-6 col-xs-12 vk">
                        <a href="https://vk.com/balashihaxiaomi"></a>
@@ -102,7 +109,7 @@
                         <br>
                         <span class="logo-text2">БАЛАШИХА</span>
                     </div>
-                    <div class="col-md-6 col-sm-8 col-xs-12 top-menu_link">
+                    <div class="col-md-6 col-sm-8 col-xs-12 top-menu_link header-row_menu">
                         <ul class="ull_fix">
                             <li>
                                 <a href="#aboutus">О НАС</a>
@@ -121,7 +128,19 @@
             </div>
       </div>
   </div>
-    
+
+   <!--Mobil-menu -->
+    <div class="menu mobil">
+              <ul >
+                <li><a href="#decision">Решения и результаты</a></li>
+                <li><a href="#system">С какими работаем</a></li>
+                <li><a href="#system">Системы</a></li>
+                <li><a href="#recourse">Почему мы</a></li>
+                <li><a href="#stage">Этапы работ</a></li>
+                <li><a href="#footer">Нам доверяют</a></li>
+              </ul>
+    </div>
+
   <!--Сarousel -->   
     <div  class="header">
         <div class="carousel fade-slide">
@@ -174,6 +193,7 @@
     <!--About Us-->
     <div id="aboutus" class="content-aboutus">
         <h1>Фирменный магазин продукции Xiaomi MITREND в Балашихе</h1>
+        <div class="img-shop"></div>
         <img src="img/Mishop.jpg" alt="">
         <div class="aboutus-text">Самый большой ассортимент товаров от Xiaomi в магазине Mitrend!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Наш фирменный магазин находится на 4 этаже ТЦ Светофор (ш. Энтузиастов, 1Б). На территории кинотеатра.</div>
     </div>
@@ -428,7 +448,7 @@
     /*Menu fixed*/
     $(window).scroll(function(event) {
         
-        if($(this).scrollTop() > 600) {
+        if($(this).scrollTop() > 150) {
             
             $('.header-row_menu_fix').fadeIn(300);
         return false;
