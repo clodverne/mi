@@ -168,15 +168,19 @@ body {
   border: 1px solid #f28942;
 }
 
-.header-top {
-  height: 6rem;
+.header-top,
+.ht {
   background-color: #151512;
-  font-family: "Montserrat";
-  color: #cfccca;
 }
 
-.header-top .out-col_start {
-  padding-left: 5rem;
+.ht {
+  width: 100%;
+}
+
+.header-top {
+  height: 6rem;
+  font-family: "Montserrat";
+  color: #cfccca;
 }
 
 .header-top .out-col_start span {
@@ -229,6 +233,7 @@ body {
 .header-top .vk a {
   display: block;
   height: 6rem;
+  width: 50px;
   background: url("../img/vk.png") no-repeat center center;
 }
 
@@ -238,6 +243,7 @@ body {
 
 .top-menu {
   background-color: #fff;
+  position: static;
 }
 
 .top-menu,
@@ -250,7 +256,6 @@ body {
 .top-menu .mi-logo img {
   position: relative;
   top: 13px;
-  left: 35px;
 }
 
 .top-menu .mi-logo .logo-text1,
@@ -564,6 +569,11 @@ body {
   color: #aaa;
 }
 
+.content-aboutus img {
+  -webkit-box-shadow: 0 0 15px rgba(255,255,255,.3);
+  box-shadow: 0 0 15px rgba(255,255,255,.3);
+}
+
 .content-aboutus .aboutus-text {
   text-align: left;
   margin: 0 auto;
@@ -780,8 +790,8 @@ body {
 
 .contact .contact-map {
   padding: 0;
-  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
-  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 .contact .contact-li {
